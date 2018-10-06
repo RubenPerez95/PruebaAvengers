@@ -1,2 +1,9 @@
 language: java
 script: mvn test -B
+deploy:
+    provider: heroku
+    api_key:
+        secure: LbcjtlCahF32hLMsmmduRQ
+    app: pruebaavengers
+    on:
+        repo: RubenPerez95/PruebaAvengers
